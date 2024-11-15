@@ -1,0 +1,111 @@
+
+.contact-form-area {
+    width: 98%;
+    background-color: #d4dfe0;
+    /* background-color: transparent; */
+    padding: 10px; /* Add some padding inside the box */
+    border-radius: 0px; /* Optional: Rounded corners for a nicer look */
+}
+
+.contact-form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-box {
+    width: 1200px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.contact-smbox {
+    border: 2px solid #000205;
+    height: 40px;
+    /* width: 100%; */
+    width: 520px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+input[type="text"] {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding-left: 2px;
+    /* background-color: #ffffff; */
+    background-color: transparent; 
+}  
+
+input[type="text"]:focus {
+    outline: none; /* This removes the outline */
+}
+
+.contact-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* 将子元素分散对齐，靠两边排列 */
+}
+
+.contact-smbox label {
+    margin-right: 5px; /* Add some space between the label and the input */
+    white-space: nowrap; /* Prevents the label from wrapping */
+    font-weight: bold; /* Makes the label text bold */
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 594px;
+    height: 145px;
+    /* max-width: 600px;  */
+    margin: auto; /* Center the form in the middle of the page */
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.text-box textarea {
+    height: 150px; /* Adjust height as necessary */
+    padding: 10px;
+    padding-bottom: 0px;
+    border: 2px solid #000; /* Black border */
+    /* border-radius: 5px; */
+    margin-bottom: 0px; /* Space between textarea and button */
+    resize: none; /* Prevent the user from resizing the textarea */
+}
+
+.contact-form button {
+    padding: 15px 30px; /* Larger padding for a bigger button */
+    background-color: rgba(18, 203, 18, 0.697); /* Black background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #494848; /* Slightly lighter black for hover effect */
+}
+
+.contact-form p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #363232;
+}
+
+
+.contact-form-title h3{
+    color: rgba(18, 203, 18, 0.697);
+    font-size: 30px;
+}
+
+.contact-form-title {
+    width: 100%;
+}

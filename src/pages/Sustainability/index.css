@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+body {
+    background-color: #fff;
+    font-size: 16px;
+    width: 1512px; 
+    margin: 0 auto;
+} */
+
+input {
+    border: 0 none;
+    outline-style: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.sus-body {
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.sus-img-area {
+    margin: auto;
+    width: 98%;
+    max-height: 480px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children along the main axis (vertical) */
+    align-items: center; /* Center children along the cross axis (horizontal) */
+}
+
+.sus-img-area img {
+    width: 100%;
+    height: auto;
+}
+.sus-left-right {
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.sus-left-right .sus-left {
+    /* width: 350px; */
+    margin-right: 70px;
+    width: 30%;
+}
+
+.sus-left img {
+    width: 100%;
+}
+
+.sus-contents {
+    /* width: 750px; */
+    /* width: 1400px; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.sus-contents h3{
+    color: rgba(18, 203, 18, 0.697);
+    font-size: 24px;
+}
+
+.cap-contents p {
+    font-size: 18px;
+}

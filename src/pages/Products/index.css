@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    background-color: #fff;
+    font-size: 16px;
+    width: 1512px;
+    margin: 0 auto;
+} */
+
+input {
+    border: 0 none;
+    outline-style: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.product-body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.product-area {
+    /* display: flex; */
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #000;
+    /* grid-gap: 15px; */
+    flex-wrap: wrap; /* This allows items to move to the next line if there's not enough space */
+    /* justify-content: center;  */
+    float: left;
+    align-items: center;
+    width: 1360px;
+    margin:auto;
+    margin-bottom: 30px;
+}
+
+.items {
+    /* width: 310px; */
+    width: calc(1360px/4);
+    height: auto;
+    box-sizing: border-box;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* outline: 1px solid #000; */
+    transition: all 0.2s linear;
+    padding: 20px;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-img {
+    width: calc(100% - 30px);
+    height: 100%;
+}
+
+.item-img:hover { 
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.item-name {
+    width: 100%;
+    height: 21px;
+    color: #615f5fe4;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.item-desc {
+    width: 100%;
+    height: 20px;
+    color: #000;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+/* Ensure that the first item in each row has a left border and the last item has a right border if they are not already handled by the :first-child or :last-child */
+.product-area > :nth-child(4n+1) {
+    border-left: 0px solid #000;
+}
+
+.product-area > :nth-child(4n) {
+    border-right: 0px solid #000;
+}
+
+.product-area > :nth-child(9) {
+    border-bottom: 0px solid #000;
+}
+  

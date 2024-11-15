@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: 0 none;
+    outline-style: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.layout-body {
+    /* width: 100%; */
+}
+
+.main-area {
+    display: flex;
+    /* width: 1512px; */
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.carousel-area {
+    width: 99%;
+    /* height: 600px; */
+    border-radius: 6px;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    position:relative;
+    overflow: visible;
+    /* cursor: pointer; */
+}
+
+
+.carousel-area img {
+    width: 100%
+}
+
+.carousel-area .tools {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+
+.carousel-area .tools ul {
+    display: flex;
+    position: absolute; 
+    bottom: 60px;
+    margin-left: 10px;
+}
+
+.carousel-area .tools li {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: rgb(102, 98, 98); 
+    cursor: pointer;
+}
+
+.carousel-area .tools li.active {
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    background-color: #fff;
+}
+
+.carousel-area .tools .buttons {
+    position: absolute;
+    /* bottom: 280px; */
+    /* top: -400%; */
+    left: 0;
+    right: 0;
+    display: flex;
+    /* justify-content: space-between; */
+    transform: translateY(-100%); 
+    
+}
+
+
+
+.tools button {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffffff1a; */
+}
+
+.tools svg {
+    width: 16px;
+    height: 16px;
+    /* color: #fff; */
+}
+
+.video-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    /* height: 600px; */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.company-video  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.products {
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex; 
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+}
+
+.product-catalog {
+    width: 85%;
+    border: 2px dashed #000; /* Adjust the border width and color as needed */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.product-catalog span {
+    padding: 5px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+
+.catalog-list {
+    margin-left: 10%;
+    margin-bottom: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-list p {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.products .product-header {
+    text-align: center;
+    /* font-size: 50px; */
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+.products-area {
+    width: 1250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between the items */
+    justify-content: center;
+    position: relative;
+}
+
+.products-area img {
+    max-height: 200px;
+    cursor: pointer;
+}
+
+
+  .items-mp {
+    width: 100%; /* Full width of the grid column */
+    /* height: auto; */
+    height: 300px;
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+    padding: 12px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Aligns image and text vertically */
+}
+
+.products-area > button {
+    position: absolute;
+    top: 50%; /* Center vertically between the two rows */
+    transform: translateY(-50%); /* Correct centering */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Specific positioning for left and right arrows */
+.products-area > button:first-of-type {
+    left: -50px; /* Adjust as needed */
+}
+
+.products-area > button:last-of-type {
+    right: -50px; /* Adjust as needed */
+}
+
+.item-img-mp {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.item-img-mp:hover { 
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.img-box-mp {
+    display: flex;
+    justify-content: center;
+}
+
+.item-name-mp {
+    width: 100%;
+    height: 21px;
+    color: #615f5fe4;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.item-desc-mp {
+    width: 100%;
+    padding-bottom: 8px;
+    height: 20px;
+    color: #000;
+    line-height: 20px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Ensures the text is aligned to the left */
+    white-space: normal; /* Allows the text to wrap */
+    word-wrap: break-word; /* Breaks long words to fit the container */
+    height: auto; /* Allows dynamic height based on content */
+}
+
+.mainpage-aboutus {
+    /* width: 86%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgb(160, 247, 162);
+}
+
+.mainpage-aboutus-title {
+    width: 1450px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainpage-aboutus-title h2 {
+    /* display: flex;
+    align-items: center; */
+    /* font-size: 45px; */
+    font-size: 4rem;
+}
+
+.aboutus-img-mainpage {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 1450px; 
+    padding: 10px; 
+}
+
+.aboutus-text-area {
+    width: 45%; /* 分配适当的宽度，根据需要调整 */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left; /* 确保文本左对齐，如果需要居中可以改为center */
+}
+
+.aboutus-img-area-mainpage {
+    width: 40%; /* 分配适当的宽度，根据需要调整 */
+    margin-left: 60px;
+    display: flex;
+    justify-content: center; /* 图片容器内部内容水平居中 */
+    align-items: center; /* 图片容器内部内容垂直居中 */
+}
+
+.aboutus-img-area-mainpage img {
+    width: 500px; 
+    height: auto; /* 高度自动 */
+}
+
+.buttons_aboutus {
+    position: absolute;
+    left: -52px;
+    right: 22px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-500%); 
+    z-index: 10000;
+}
+
+
+.tools-aboutus button {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffffff1a; */
+}
+
+.tools-aboutus svg {
+    width: 16px;
+    height: 16px;
+    /* color: #fff; */
+}
+
+.buttons_aboutus button:hover {
+    background-color: #cccccc; /* 鼠标悬停时的背景色变化 */
+}
+
+
+.carousel-area-aboutus {
+    width: 99%;
+    border-radius: 6px;
+    overflow: hidden;
+    position:relative;
+    overflow: visible;
+}
+
+.carousel-area-aboutus .tools-aboutus ul {
+    display: flex;
+    
+}
+
+.carousel-area-aboutus .tools-aboutus li {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: #fff6;
+    cursor: pointer;
+}
+
+.carousel-area-aboutus .tools-aboutus li.active {
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    background-color: #fff;
+}
+

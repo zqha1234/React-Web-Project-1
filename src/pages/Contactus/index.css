@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    background-color: #fff;
+    font-size: 16px;
+    width: 1512px;
+    margin: 0 auto;
+} */
+
+input {
+    border: 0 none;
+    outline-style: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.contact-body {
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contact-img-area {
+    margin: auto;
+    width: 98%;
+    max-height: 480px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children along the main axis (vertical) */
+    align-items: center; /* Center children along the cross axis (horizontal) */
+}
+
+.contact-img-area img {
+    width: 100%;
+    height: 100%;
+}
+.contact-left-right {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* .sus-left-right .sus-left {
+    width: 350px;
+    margin-right: 70px;
+}
+
+.sus-left img {
+    width: 100%;
+} */
+
+.contact-contents {
+    width: 1200px;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact-contents h3{
+    color: rgba(18, 203, 18, 0.697);
+    font-size: 30px;
+}
+
+.cap-contents p {
+    font-size: 18px;
+}
+
+.map-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    /* margin-top: 10px; */
+    width: 53%;
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top of the container */
+    /* justify-content: center;  */
+}
+
+.info-title {
+    margin-top: 6px;
+    width: 170px;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.map {
+    /* width: 700px; */
+    width: 40%;
+    /* margin-top: 30px; */
+    /* height: 300px; */
+}
+
+.map img {
+    width: 100%;
+    height: 350px;
+}
+

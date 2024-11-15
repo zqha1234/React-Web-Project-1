@@ -1,0 +1,325 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.contents-product {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    /* align-items: flex-start; */
+    align-items: center;
+    justify-content: center;
+}
+
+.path-area-product {
+    display: flex;
+    width: 1200px;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+}
+
+.path-area-product a {
+    font-size: 16px;
+}
+
+.path-area-product span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.product-detail {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.img-gallery {
+  flex: 1;
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  padding-left: 0px;
+  /* border: 1px solid #000; */
+  margin: auto;
+  /* Styles for your image gallery */
+  /* justify-content: center; */
+}
+
+.product-info {
+  width: 420px;
+  flex: 2;
+  margin-left: 110px;
+  margin-top: 65px;
+
+  /* Additional styling */
+}
+
+.prod-table-header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers the child horizontally */
+}
+
+/* .pro-desc {
+  font-size: 22px;
+  width: 500px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+} */
+
+.pro-desc {
+  font-size: 22px;  
+  width: 450px;       
+  margin: auto;             
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50px;      */
+  margin-bottom: 20px;
+  text-align: center; /* Ensures the text is centered */
+  /* margin-top: 10px;  */
+  /* width: 100%;  */
+  display: block; /* Ensures the element is treated as a block-level element */      
+}
+
+
+.additional-info {
+  flex: 1;
+  width: 1200px;
+  /* width: 100%; */
+  /* margin-left: 20px; */
+  /* Additional styling */
+}
+
+.additional-info table {
+  width: 100%;
+  /* width: 1200px; */
+  border-collapse: collapse;
+}
+
+.additional-info th,
+.additional-info td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-pro-info {
+  font-size: 18px;
+  width: 100%;
+}
+
+.table-pro-info th {
+  text-align: left;
+  width: 25%;
+}
+.table-pro-info td {
+  text-align: left;
+  width: 50%;
+}
+
+.product-info tr {
+  height: 50px; /* This sets a fixed height for each row */
+}
+
+.social-content {
+  width: 1200px;
+  display: flex;
+  
+}
+
+.social-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 85px;
+}
+
+.social-share span {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+.social-share a {
+  margin: 0 5px; /* Spacing between icons */
+}
+
+.social-share a:hover {
+  opacity: 0.7; /* Optional hover effect */
+}
+
+
+.product-details-table {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.product-details-table h2 {
+  height: 38px;
+  border: 1px solid #000;
+  border-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-details-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-details-table th,
+.product-details-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.product-details-table th {
+  background-color: #f2f2f2;
+  width: 18%;
+}
+
+.product-details-table td {
+
+  width: 32%;
+}
+
+.also-like {
+  width: 1350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.also-like h1{
+  width: 1200px;
+}
+
+.also-like-layout {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.also-like-display {
+  /* width: 1200px; */
+  height: 320px; 
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+
+.also-like-display > div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 0px; 
+  width: 300px;
+  /* height: auto; */
+}
+
+.also-like-display img {
+  /* width: 100%; */
+  /* height: auto; */
+  width: auto;
+  /* height: 100px;  */
+  max-height: 200px;
+}
+
+
+.also-like-display p {
+  text-align: left; 
+  margin-top: 10px; 
+}
+
+.items- {
+  /* width: 310px; */
+  width: calc(1200px/4);
+  /* height: auto; */
+  height: 320px;
+  /* border: 1px solid #ccc;  */
+  box-sizing: border-box;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  /* outline: 1px solid #000; */
+  transition: all 0.2s linear;
+  padding: 20px;
+}
+
+.img-box- {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img- {
+  width: calc(100% - 30px);
+  height: 100%;
+}
+
+.item-img-:hover { 
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.item-name- {
+  width: 100%;
+  height: 21px;
+  color: #615f5fe4;
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+
+.also-like-display p {
+  text-align: center; /* Ensures the text is centered */
+  margin-top: 10px; /* Adjusts the space above the description */
+  width: 100%; /* Ensures the paragraph takes up the full width of its container */
+  display: block; /* Ensures the element is treated as a block-level element */
+}
+
+
+.item-desc-p {
+  width: 100%;
+  height: 20px;
+  color: #000;
+  line-height: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Ensures the text is aligned to the left */
+  white-space: normal; /* Allows the text to wrap */
+  word-wrap: break-word; /* Breaks long words to fit the container */
+  height: auto; /* Allows dynamic height based on content */
+}
+
+
+.also-like-display > :nth-child(1) {
+  border-left: 1px solid #000;
+}

@@ -1,0 +1,53 @@
+.search-body {
+  display: flex;
+  justify-content: center;
+}
+
+.search-results-container {
+    padding: 20px;
+    width: 1200px;
+  }
+  
+  .search-results-container h1 {
+    padding-bottom: 20px;
+  }
+
+  .results {
+    display: flex; /* Changed from grid to flex */
+    flex-direction: column; /* Ensures items are stacked vertically */
+    gap: 20px;
+  }
+  
+  .result-item {
+    display: flex;
+    align-items: center; /* Adjust alignment as needed */
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+  }
+  
+  .result-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .result-info h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .result-info p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .result-info a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px; /* Optional: adds space above the link */
+  }
+
+
+  
